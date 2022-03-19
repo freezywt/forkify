@@ -1,7 +1,5 @@
 import View from './View.js';
-
-// import icons from '../img/icons.svg'; // Parcel 1
-import icons from 'url:../../img/icons.svg'; // Parcel 2
+import icons from 'url:../../img/icons.svg';
 import { Fraction } from 'fractional';
 
 class RecipeView extends View {
@@ -49,16 +47,17 @@ class RecipeView extends View {
           <span class="recipe__info-data recipe__info-data--minutes">${
             this._data.cookingTime
           }</span>
-          <span class="recipe__info-text">minutes</span>
+          <span class="recipe__info-text">Minutes</span>
         </div>
         <div class="recipe__info">
           <svg class="recipe__info-icon">
             <use href="${icons}#icon-users"></use>
           </svg>
+          <span class="recipe__info-text">serves</span>
           <span class="recipe__info-data recipe__info-data--people">${
             this._data.servings
           }</span>
-          <span class="recipe__info-text">servings</span>
+          <span class="recipe__info-text">peoples</span>
 
           <div class="recipe__info-buttons">
             <button class="btn--tiny btn--update-servings" data-update-to="${
@@ -85,7 +84,7 @@ class RecipeView extends View {
         </div>
         <button class="btn--round btn--bookmark">
           <svg class="">
-            <use href="${icons}#icon-bookmark${
+            <use href="${icons}#icon-heart${
       this._data.bookmarked ? '-fill' : ''
     }"></use>
           </svg>
