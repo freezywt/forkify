@@ -22,4 +22,5 @@ A site coded using forkify api, based on my work test.
 #### infos :
 
 <a href="https://forkify-api.herokuapp.com/">Api used</a>
+<br />
 <a href="https://www.udemy.com/course/the-complete-javascript-course/">Course based</a>
